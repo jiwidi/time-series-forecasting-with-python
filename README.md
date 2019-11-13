@@ -47,6 +47,9 @@
   
 * 7  Multivariate Time Series Forecasting
 
+* 8  Additional resources & literature
+  
+
 # Sample Datasets
 ## Univariate datasets
 *Univariate Datasets obtained [here](https://machinelearningmastery.com/time-series-datasets-for-machine-learning/)*
@@ -78,4 +81,5 @@ We will use the bike sharing dataset at London. This dataset contains the number
   * "is_weekend" - boolean field - 1 if the day is weekend
   * "season" - category field meteorological seasons: 0-spring ; 1-summer; 2-fall; 3-winter.
 
-
+# Additional resources and literature
+## Papers
