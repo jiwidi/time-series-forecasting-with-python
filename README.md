@@ -83,3 +83,5 @@ We will use the bike sharing dataset at London. This dataset contains the number
 
 # Additional resources and literature
 ## Papers
+
+* Adhikari, R., & Agrawal, R. K. (2013). An introductory study on time series modeling and forecasting.[link](https://arxiv.org/ftp/arxiv/papers/1302/1302.6613.pdf)
