@@ -37,15 +37,16 @@
   * 6.3  Autoregressive Moving Average (ARMA)
   * 6.4  Autoregressive Integrated Moving Average (ARIMA)
   * 6.5  Autoregressive Fractionally Integrated Moving Average (ARFIMA)
-  * 6.6  Interpreting ACF plots
-	* 6.6.1  Auto ARIMA
-  * 6.7  Seasonal Autoregressive Integrated Moving-Average (SARIMA)
-	* 6.7.1  Auto - SARIMA
-	* 6.7.2  Tuned SARIMA
-  * 6.8  SARIMAX
-  * 6.9  Prophet
-  * 6.10  Improving Time Series Forecast models
-  * 6.11  Solve a problem!
+  * 6.6  Autoregressive conditional heteroskedasticity (ARCH)
+  * 6.7  Interpreting ACF plots
+	* 6.7.1  Auto ARIMA
+  * 6.8  Seasonal Autoregressive Integrated Moving-Average (SARIMA)
+	* 6.8.1  Auto - SARIMA
+	* 6.8.2  Tuned SARIMA
+  * 6.9  SARIMAX
+  * 6.10  Prophet
+  * 6.11  Improving Time Series Forecast models
+  * 6.12  Solve a problem!
   
 * 7  Multivariate Time Series Forecasting
 
