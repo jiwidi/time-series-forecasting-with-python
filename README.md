@@ -28,8 +28,7 @@ Table of contents
 	  * 5.4.3.1  Differencing
 	  * 5.4.3.2  Decomposition
   * 5.5  Filters and noise removal
-  * 5.6  Evaluation metrics
-  * 5.7  Model selection
+  * 5.6  Model selection
 * [6  Evaluation metrics](#evaluation-metrics)
 * 7  Univariate Time Series forecasting
   * 7.1  Autoregression (AR)
