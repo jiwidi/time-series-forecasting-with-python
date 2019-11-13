@@ -7,9 +7,8 @@ Table of contents
 * [2 Sample datasets](#sample-datasets)
 * 3  Importing data
 * 4  Time series analysis
-  * 4.1  Stationality
-  * 4.2  Seasonality 
-  * 4.3  Autocorrelation
+  * 4.1  Seasonality
+  * 4.2  Stationarity
 * 5  Data Visualization and Preprocessing methods
   * 5.1  Decomposing time series
   * 5.2  Seasonality, "moving average"  
