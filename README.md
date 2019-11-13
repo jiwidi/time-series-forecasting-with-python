@@ -27,6 +27,7 @@
 	  * 5.2.3.1  Differencing
 	  * 5.2.3.2  Decomposition
   * 5.3  Filters and noise removal
+  * 5.4  Evaluation metrics
 * 6  Univariate Time Series forecasting
   * 6.1  Autoregression (AR)
   * 6.1.1  Reversing the transformations
