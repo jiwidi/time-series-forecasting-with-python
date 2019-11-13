@@ -30,23 +30,27 @@ Table of contents
   * 5.6  Model selection
 * [6  Evaluation metrics](#evaluation-metrics)
 * 7  Univariate Time Series forecasting
-  * 7.1  Autoregression (AR)
-  * 7.1.1  Reversing the transformations
-  * 7.1.2  Forecast quality scoring metrics
-  * 7.2  Moving Average (MA)
-  * 7.3  Autoregressive Moving Average (ARMA)
-  * 7.4  Autoregressive Integrated Moving Average (ARIMA)
-  * 7.5  Autoregressive Fractionally Integrated Moving Average (ARFIMA)
-  * 7.6  Autoregressive conditional heteroskedasticity (ARCH)
-  * 7.7  Interpreting ACF plots
-	* 7.7.1  Auto ARIMA
-  * 7.8  Seasonal Autoregressive Integrated Moving-Average (SARIMA)
-	* 7.8.1  Auto - SARIMA
-	* 7.8.2  Tuned SARIMA
-  * 7.9  SARIMAX
-  * 7.10  Prophet
-  * 7.11  Improving Time Series Forecast models
-  * 7.12  Solve a problem!
+  * 7.1 Basis
+    * 7.1.1  Autoregression (AR)
+      * Reversing the transformations
+      * Forecast quality scoring metrics
+    * 7.1.2 Moving Average (MA)
+  * 7.2 Linear Models
+    * 7.2.1  Autoregressive Moving Average (ARMA)
+    * 7.2.2  Autoregressive Integrated Moving Average (ARIMA)
+    * 7.2.3  Autoregressive Fractionally Integrated Moving Average (ARFIMA)
+    * 7.2.4  Seasonal Autoregressive Integrated Moving-Average (SARIMA) + (SARIMAX)
+  * 7.3 Non-Linear Models
+    * 7.3.1  Autoregressive conditional heteroskedasticity (ARCH)
+    * 7.3.2 Prophet
+    * 7.3.3 Neural Networks
+  * 7.4 Other
+    * 7.4.1  Auto - ARIMA
+  	* 7.4.2  Auto - SARIMA
+  	* 7.4.3  Tuned - SARIMA
+  * 7.5  Interpreting ACF and PACF plots
+  * 7.6  Improving Time Series Forecast models
+  * 7.7  Solve a problem!
   
 * 8  Multivariate Time Series Forecasting
 
