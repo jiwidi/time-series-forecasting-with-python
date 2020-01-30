@@ -1,15 +1,14 @@
 # time-series-forecasting-wiki
-
+This repository tries to encapsulate the basics of time series forecasting. I will talk through the basics of time series analysis and give an overview of the most efective methods I have encountered for both Univariate and Multivariate series.
 
 Table of contents
 =================
-* 1  Time Series
-* [2 Sample datasets](#sample-datasets)
-* 3  Importing data
-* 4  Time series analysis
+* [1 Time Series](#time-series)
+* [2 Datasets we will use](#sample-datasets)
+* [4 Time series basic analysis](#time-series-basic-analysis)
   * 4.1  Seasonality
   * 4.2  Stationarity
-* 5  Data Visualization and Preprocessing methods
+* [5 Extra Data Visualization and Preprocessing methods](#extra-data-visualization-and-preprocessing-methods)
   * 5.1  Decomposing time series
   * 5.2  Seasonality, "moving average"  
   * 5.3  Stationarity  
@@ -29,7 +28,7 @@ Table of contents
   * 5.5  Filters and noise removal
   * 5.6  Model selection
 * [6  Evaluation metrics](#evaluation-metrics)
-* 7  Univariate Time Series forecasting
+* [7  Univariate Time Series forecasting](#univariate-time-series-forecasting)
   * 7.1 Basis
     * 7.1.1  Autoregression (AR)
       * Reversing the transformations
@@ -42,8 +41,6 @@ Table of contents
     * 7.2.4  Seasonal Autoregressive Integrated Moving-Average (SARIMA) + (SARIMAX)
   * 7.3 Non-Linear Models
     * 7.3.1  Autoregressive conditional heteroskedasticity (ARCH)
-    * 7.3.2 Prophet
-    * 7.3.3 Neural Networks
   * 7.4 Other
     * 7.4.1  Auto - ARIMA
   	* 7.4.2  Auto - SARIMA
@@ -52,7 +49,11 @@ Table of contents
   * 7.6  Improving Time Series Forecast models
   * 7.7  Solve a problem!
   
-* 8  Multivariate Time Series Forecasting
+* [8  Multivariate Time Series Forecasting](multivariate-time-series-forecasting)
+    * 8.1 Non-Linear Models
+        * 8.1.1 Prophet
+        * 8.1.2 Neural Networks
+    
 
 * [9 Additional resources & literature](#additional-resources-and-literature)
   
@@ -65,19 +66,19 @@ Table of contents
 
 ## Multivariate datasets
 
-* [Beijing air quality](https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data)
-* [Metro Interstate Traffic Volume Data Set](https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data)
+* [Beijing air quality](https://raw.githubusercontent.com/jbrownlee/Datasets/master/pollution.csv)
+<!-- * [Metro Interstate Traffic Volume Data Set](https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data)
 
 * [London bike sharing](https://www.kaggle.com/hmavrodiev/london-bike-sharing-dataset/data#_=_)
-
-We will use the bike sharing dataset at London. This dataset contains the number of bikes shared each day and a set of features on the weather conditions. This is a multivariate dataset but we will also use it for the univariate analysis. For each case we will use a selection of features:
+ -->
+We will use the Beijing air quality dataset. This dataset contains the measurements for the air pollution every hoy. This is a multivariate dataset but we will also use it for the univariate analysis. For each case we will use a selection of features:
 
 * Univariate
-  * "timestamp" - timestamp field for grouping the data
-  * "cnt" - the count of a new bike shares
+  * "date" - Time of the measurement
+  * "pollution" - target variable
   
 * Multivariate 
-  * "timestamp" - timestamp field for grouping the data
+<!--   * "timestamp" - timestamp field for grouping the data
   * "cnt" - the count of a new bike shares
   * "t1" - real temperature in C
   * "t2" - temperature in C "feels like"
@@ -86,7 +87,9 @@ We will use the bike sharing dataset at London. This dataset contains the number
   * "weather_code" - category of the weather
   * "is_holiday" - boolean field - 1 holiday / 0 non holiday
   * "is_weekend" - boolean field - 1 if the day is weekend
-  * "season" - category field meteorological seasons: 0-spring ; 1-summer; 2-fall; 3-winter.
+  * "season" - category field meteorological seasons: 0-spring ; 1-summer; 2-fall; 3-winter. -->
+  
+
 # Evaluation Metrics
 
 There are many measures that can be used to analyze the performance of a prediction:
