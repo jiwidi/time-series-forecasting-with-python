@@ -1,1 +1,6 @@
 tqdm
+requests
+pandas
+numpy
+keras
+matplotlib
