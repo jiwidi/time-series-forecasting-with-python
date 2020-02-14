@@ -4,3 +4,6 @@ pandas
 numpy
 keras
 matplotlib
+beautifultable
+tabulate
+pmdarima
