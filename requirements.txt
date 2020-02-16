@@ -1,9 +1,12 @@
 tqdm
 requests
-pandas
+xgboost
+bayesian-optimization
+pandas==1.0
 numpy
 keras
 matplotlib
 beautifultable
-tabulate
+tabulate>=0.8.3
 pmdarima
+torch
