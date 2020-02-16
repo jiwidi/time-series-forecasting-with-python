@@ -1,6 +1,7 @@
 tqdm
 requests
 xgboost
+fbprophet
 bayesian-optimization
 pandas==1.0
 numpy
