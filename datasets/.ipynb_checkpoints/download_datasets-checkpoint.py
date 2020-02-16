@@ -66,7 +66,7 @@ if __name__ == "__main__":
 #     dataset['snow'] = (dataset.snow > 0).astype(int) 
 #     dataset['rain'] = (dataset.rain > 0).astype(int) 
     #Make it to supervised learning, every raw of datapoints at time t has target t+1
-    dataset["pollution_tomorrow"] = dataset["pollution_today"].tolist()[1:] + dataset["pollution_today"].tolist()[:1]
+    dataset["pollution_yesterday"] =  dataset["pollution_today"].tolist()[-1:] + dataset["pollution_today"].tolist()[:-1] 
     # save to file
     path = os.path.dirname(os.path.realpath(__file__))
     logger.info(f"Saving air pollution dataset to{path}")
