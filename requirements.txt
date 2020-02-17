@@ -7,6 +7,7 @@ holidays==0.9.12
 fbprophet
 numpy
 keras
+tensorflow
 matplotlib
 beautifultable
 tabulate>=0.8.3

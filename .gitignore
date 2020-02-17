@@ -135,3 +135,5 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+.ipynb_checkpoints/requirements-checkpoint.txt
+.ipynb_checkpoints/time-series-forecasting-tutorial-checkpoint.ipynb
