@@ -1,5 +1,5 @@
 import numpy as np
-
+from sklearn.metrics import r2_score
 EPSILON = 1e-10
 
 
@@ -257,6 +257,10 @@ def mda(actual: np.ndarray, predicted: np.ndarray):
     """ Mean Directional Accuracy """
     return np.mean((np.sign(actual[1:] - actual[:-1]) == np.sign(predicted[1:] - predicted[:-1])).astype(int))
 
+def bias(actual: np.ndarray, predicted: np.ndarray):
+    """ Mean forecast error(or Forecast Bias) """
+    return np.mean(actual-predicted)
+
 
 METRICS = {
     'mse': mse,
@@ -289,10 +293,12 @@ METRICS = {
     'mbrae': mbrae,
     'umbrae': umbrae,
     'mda': mda,
+    'bias': bias,
+    'r2': r2_score
 }
 
 
-def evaluate(actual: np.ndarray, predicted: np.ndarray, metrics=('mae', 'rmse', 'smape', 'umbrae')):
+def evaluate(actual: np.ndarray, predicted: np.ndarray, metrics=('mae', 'rmse', 'mape', 'bias','r2')):
     results = {}
     for name in metrics:
         try:
