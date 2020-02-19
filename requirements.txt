@@ -5,11 +5,12 @@ bayesian-optimization
 pandas==1.0
 holidays==0.9.12
 fbprophet
-numpy
-keras
-tensorflow
+numpy>=1.17.3
+scipy==1.4.1
+tensorflow==2.1.0
+scikit-learn>=0.22
 matplotlib
+statsmodels==0.11
 beautifultable
 tabulate>=0.8.3
 pmdarima
-torch
