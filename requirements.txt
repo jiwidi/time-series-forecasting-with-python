@@ -9,6 +9,7 @@ numpy>=1.17.3
 scipy==1.4.1
 tensorflow==2.1.0
 scikit-learn>=0.22
+import lightgbm as lgb
 matplotlib
 statsmodels==0.11
 beautifultable
