@@ -9,10 +9,25 @@ def bar_metrics(resultsDict):
     color_dict = dict(zip(df.columns,colors))
     fig = plt.figure(figsize=(20, 15))
 
-    for irow in range(len(df)):
-        ax = fig.add_subplot(2,2,irow+1)
-        df.iloc[irow].sort_values().plot(kind='bar', colormap='Paired',color=[color_dict.get(x, '#333333') for x in df.iloc[irow].sort_values().index])
-        plt.legend()
-
+    #MAE plot
+    ax = fig.add_subplot(2,2,1)
+    df.loc['mae'].sort_values().plot(kind='bar', colormap='Paired',color=[color_dict.get(x, '#333333') for x in df.loc['mae'].sort_values().index])
+    plt.legend()
+    plt.title("MAE Metric, lower is better")
+    #rmse plot
+    ax = fig.add_subplot(2,2,2)
+    df.loc['rmse'].sort_values().plot(kind='bar', colormap='Paired',color=[color_dict.get(x, '#333333') for x in df.loc['rmse'].sort_values().index])
+    plt.legend()
+    plt.title("RMSE Metric, lower is better")
+    #mape plot
+    ax = fig.add_subplot(2,2,3)
+    df.loc['mape'].sort_values().plot(kind='bar', colormap='Paired',color=[color_dict.get(x, '#333333') for x in df.loc['mape'].sort_values().index])
+    plt.legend()
+    plt.title("MAPE Metric, lower is better")
+    #r2 plot
+    ax = fig.add_subplot(2,2,4)
+    df.loc['r2'].sort_values(ascending=False).plot(kind='bar', colormap='Paired',color=[color_dict.get(x, '#333333') for x in df.loc['r2'].sort_values(ascending=False).index])
+    plt.legend()
+    plt.title("R2 Metric, higher is better")
     plt.tight_layout()
     plt.show()
