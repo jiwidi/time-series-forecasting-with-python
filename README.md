@@ -36,7 +36,22 @@ In order to obtain a exact copy of the dataset used in this tutorial please run 
 
 # :triangular_ruler: Models tested
 
-#PLACEHOLDER
+* Autoregression (AR)
+* Moving Average (MA)
+* Autoregressive Moving Average (ARMA)
+* Autoregressive integraded moving average (ARIMA)
+* Seasonal autoregressive integrated moving average (SARIMA)
+* Bayesian regression
+* Lasso
+* SVM
+* Randomforest
+* Nearest neighbors
+* XGBoost
+* Lightgbm
+* Prophet
+* Long short-term memory (LSTM) 
+* DeepAR
+
 
 # :mag: Forecasting results
 We will devide our results wether the extra features columns such as temperature or preassure were used by the model as this is a huge step in metrics and represents two different scenarios. Metrics used were:
@@ -58,3 +73,6 @@ We will devide our results wether the extra features columns such as temperature
 || |
 | - | - |
 | Adhikari, R., & Agrawal, R. K. (2013). An introductory study on time series modeling and forecasting.|[[1]](https://arxiv.org/ftp/arxiv/papers/1302/1302.6613.pdf)|
+
+# Contributing
+Want to see another model tested? Do you have anything to add or fix? I'll be happy to talk about it! Open an issue/PR :) 
