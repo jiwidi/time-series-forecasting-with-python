@@ -18,9 +18,21 @@ In order to obtain a exact copy of the dataset used in this tutorial please run 
 #  📚 Analysis and transforms
 
 * Time series decomposition
-* Seasonality 
+  * Level
+  * Trend
+  * Seasonality 
+  * Noise
+  
 * Stationarity
+  * AC and PAC plots
+  * Rolling mean and std
+  * Dickey-Fuller test
+  
 * Making our time series stationary
+  * Difference transform
+  * Log scale
+  * Smoothing
+  * Moving average
 
 # :triangular_ruler: Models tested
 
