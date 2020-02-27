@@ -4,6 +4,7 @@ xgboost
 lightgbm
 bayesian-optimization
 pandas==0.25
+gluonts
 holidays==0.9.12
 numpy>=1.17.3
 scipy==1.2
