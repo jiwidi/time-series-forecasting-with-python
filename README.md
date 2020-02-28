@@ -62,10 +62,10 @@ We will devide our results wether the extra features columns such as temperature
 * Root Mean Squared Error (RMSE)
 * Coefficient of determination (R2)
 
-## Univariate models
-
-
-## Multivariate models
+|              |   |
+:-------------------------:|:-------------------------:
+![](results/mae.png)  |  ![](results/mape.png)
+![](results/rmse.png)  |  ![](results/r2.png)
 
 # :shipit: Additional resources and literature
 ## Papers
