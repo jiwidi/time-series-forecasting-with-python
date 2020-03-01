@@ -3,18 +3,6 @@ import pandas as pd
 from matplotlib.transforms import Bbox
 
 
-def full_extent(ax, pad=0.0):
-    """Get the full extent of an axes, including axes labels, tick labels, and
-    titles."""
-    # For text objects, we need to draw the figure first, otherwise the extents
-    # are undefined.
-    ax.figure.canvas.draw()
-    items = ax.get_xticklabels() + ax.get_yticklabels() 
-#    items += [ax, ax.title, ax.xaxis.label, ax.yaxis.label]
-    items += [ax, ax.title]
-    bbox = Bbox.union([item.get_window_extent() for item in items])
-
-    return bbox.expanded(1.0 + pad, 1.0 + pad)
 
 def bar_metrics(resultsDict):
     df = pd.DataFrame.from_dict(resultsDict)
@@ -42,12 +30,12 @@ def bar_metrics(resultsDict):
     plt.legend()
     plt.title("R2 Metric, higher is better")
     plt.tight_layout()
-    extent1 = full_extent(ax1).transformed(fig.dpi_scale_trans.inverted())
-    extent2 = full_extent(ax2).transformed(fig.dpi_scale_trans.inverted())
-    extent3 = full_extent(ax3).transformed(fig.dpi_scale_trans.inverted())
-    extent4 = full_extent(ax4).transformed(fig.dpi_scale_trans.inverted())
-    plt.savefig('results/mae.png', bbox_inches=extent1)
-    plt.savefig('results/rmse.png', bbox_inches=extent2)
-    plt.savefig('results/mape.png', bbox_inches=extent3)
-    plt.savefig('results/r2.png', bbox_inches=extent4)
+#     extent1 = full_extent(ax1).transformed(fig.dpi_scale_trans.inverted())
+#     extent2 = full_extent(ax2).transformed(fig.dpi_scale_trans.inverted())
+#     extent3 = full_extent(ax3).transformed(fig.dpi_scale_trans.inverted())
+#     extent4 = full_extent(ax4).transformed(fig.dpi_scale_trans.inverted())
+#     plt.savefig('results/mae.png', bbox_inches=extent1)
+#     plt.savefig('results/rmse.png', bbox_inches=extent2)
+#     plt.savefig('results/mape.png', bbox_inches=extent3)
+    plt.savefig('results/metrics.png')
     plt.show()

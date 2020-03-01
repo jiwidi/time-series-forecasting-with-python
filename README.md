@@ -62,10 +62,7 @@ We will devide our results wether the extra features columns such as temperature
 * Root Mean Squared Error (RMSE)
 * Coefficient of determination (R2)
 
-|              |   |
-:-------------------------:|:-------------------------:
-![](results/mae.png)  |  ![](results/mape.png)
-![](results/rmse.png)  |  ![](results/r2.png)
+![](results/metrics.png)  
 
 # :shipit: Additional resources and literature
 ## Papers
