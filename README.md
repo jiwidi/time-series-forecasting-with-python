@@ -65,13 +65,12 @@ We will devide our results wether the extra features columns such as temperature
 ![](results/metrics.png)  
 
 # :shipit: Additional resources and literature
-## Papers
 
-| |
-| - |
-| Adhikari, R., & Agrawal, R. K. (2013). An introductory study on time series modeling and forecasting [[1]](https://arxiv.org/ftp/arxiv/papers/1302/1302.6613.pdf)|
-| Introduction to Time Series Forecasting With Python [[2]](https://machinelearningmastery.com/introduction-to-time-series-forecasting-with-python/)|
-| Deep Learning for Time Series Forecasting [[3]](https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/ )
+| | |
+| - | - |
+| Adhikari, R., & Agrawal, R. K. (2013). An introductory study on time series modeling and forecasting | [[1]](https://arxiv.org/ftp/arxiv/papers/1302/1302.6613.pdf)|
+| Introduction to Time Series Forecasting With Python | [[2]](https://machinelearningmastery.com/introduction-to-time-series-forecasting-with-python/)|
+| Deep Learning for Time Series Forecasting | [[3]](https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/ )
 
 # Contributing
 Want to see another model tested? Do you have anything to add or fix? I'll be happy to talk about it! Open an issue/PR :) 
