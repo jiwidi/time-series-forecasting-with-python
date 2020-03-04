@@ -1,6 +1,6 @@
 tqdm
 requests
-xgboost
+xgboost==0.9
 lightgbm==2.3.1
 bayesian-optimization
 pandas==0.25
