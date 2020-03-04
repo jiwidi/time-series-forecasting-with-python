@@ -221,25 +221,39 @@ We will devide our results wether the extra features columns such as temperature
       <td>0.335567</td>
     </tr>
     <tr>
-      <th>Autoregressive Moving Average</th>
+      <th>ARMA</th>
       <td>47.096859</td>
       <td>64.861693</td>
       <td>1.005644</td>
       <td>0.365759</td>
     </tr>
     <tr>
-      <th>Moving Average</th>
+      <th>MA</th>
       <td>49.043875</td>
       <td>66.201671</td>
       <td>1.052869</td>
       <td>0.339282</td>
     </tr>
     <tr>
-      <th>Autoregression</th>
+      <th>AR</th>
       <td>47.238049</td>
       <td>65.321718</td>
       <td>1.015593</td>
       <td>0.356730</td>
+    </tr>
+    <tr>
+      <th>HWES</th>
+      <td>52.960293</td>
+      <td>74.671752</td>
+      <td>1.112627</td>
+      <td>0.159398</td>
+    </tr>
+    <tr>
+      <th>SES</th>
+      <td>52.960293</td>
+      <td>74.671752</td>
+      <td>1.112627</td>
+      <td>0.159398</td>
     </tr>
     <tr>
       <th>Yesterdays value</th>
