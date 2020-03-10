@@ -15,6 +15,7 @@ You can find the more detailed toc on the main notebook #LINK
 
 
 
+
 # :open_file_folder: Dataset
 
 The dataset used is the [Beijing air quality](https://archive.ics.uci.edu/ml/datasets/Beijing+PM2.5+Data) public dataset. This dataset contains polution data from 2014 to 2019 sampled every 10 minutes along with extra weather features such as preassure, temperature etc. We decided to resample the dataset with daily frequency for both easier data handling and proximity to a real use case scenario (no one would build a model to predict polution 10 minutes ahead, 1 day ahead looks more realistic). In this case the series is already stationary with some small seasonalities which change every year #MORE ONTHIS
@@ -56,6 +57,7 @@ In order to obtain a exact copy of the dataset used in this tutorial please run 
 * Lightgbm [Link](https://github.com/microsoft/LightGBM)
 * Prophet [Link](https://facebook.github.io/prophet/docs/quick_start.html)
 * Long short-term memory with tensorflow (LSTM)[Link](https://www.tensorflow.org/)
+
 * DeepAR
 
 
@@ -67,6 +69,7 @@ We will devide our results wether the extra features columns such as temperature
 * Mean Absolute Percentage Error (MAPE)
 * Root Mean Squared Error (RMSE)
 * Coefficient of determination (R2)
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -279,7 +282,7 @@ We will devide our results wether the extra features columns such as temperature
 </table>
 
 
-![](results/metrics.png)  
+ 
 
 # :shipit: Additional resources and literature
 
@@ -290,7 +293,7 @@ There are several models we have not tried in this tutorials as they come from t
 * ESRRN [link](https://eng.uber.com/m4-forecasting-competition/)  [Code](https://github.com/damitkwr/ESRNN-GPU)
 
 
-# Additional resources and literature
+#
 | | |
 | - | - |
 | Adhikari, R., & Agrawal, R. K. (2013). An introductory study on time series modeling and forecasting | [[1]](https://arxiv.org/ftp/arxiv/papers/1302/1302.6613.pdf)|
@@ -298,6 +301,7 @@ There are several models we have not tried in this tutorials as they come from t
 | Deep Learning for Time Series Forecasting | [[3]](https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/ )
 | The Complete Guide to Time Series Analysis and Forecasting| [[4]](https://towardsdatascience.com/the-complete-guide-to-time-series-analysis-and-forecasting-70d476bfe775)| 
 | How to Decompose Time Series Data into Trend and Seasonality| [[5]](https://machinelearningmastery.com/decompose-time-series-data-trend-seasonality/)
+
 
 # Contributing
 Want to see another model tested? Do you have anything to add or fix? I'll be happy to talk about it! Open an issue/PR :) 
