@@ -1,4 +1,4 @@
-# Set up python enviorment
+# Setup python enviorment
 
 If you want to run the notebooks on your computer make sure you install the requirements.txt python dependencies. I recommend using virtual environments, you could set up one for this repository like this:
 
