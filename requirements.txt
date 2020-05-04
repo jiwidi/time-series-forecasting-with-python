@@ -1,4 +1,5 @@
 tqdm==4.43
+pydantic==1.4
 requests==2.23
 xgboost==0.90
 fbprophet==0.4
