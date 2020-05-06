@@ -3,16 +3,8 @@ This repository contains a series of analysis, transforms and forecasting models
 
 <img src="results/beijing.jpg">
 
-A simplified table of contents is:
 
-#PLACEHOLDER
-
-You can find the more detailed toc on the main notebook #LINK
-
-**Who is this tutorial aimed to or prerequisites**
-
-##TOFILL 
-
+You can find the more detailed toc on the main [notebook](time-series-forecasting-tutorial.ipynb) 
 
 
 
@@ -305,3 +297,4 @@ There are several models we have not tried in this tutorials as they come from t
 
 # Contributing
 Want to see another model tested? Do you have anything to add or fix? I'll be happy to talk about it! Open an issue/PR :) 
+

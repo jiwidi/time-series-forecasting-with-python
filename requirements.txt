@@ -1,4 +1,5 @@
 tqdm==4.43
+pydantic==1.4
 requests==2.23
 xgboost==0.90
 fbprophet==0.4
@@ -11,7 +12,7 @@ numpy==1.16
 scipy==1.4.1
 mxnet==1.4.1 
 gluonts==0.4.2
-tensorflow==2.0
+tensorflow==2.0.1
 scikit-learn>=0.22
 matplotlib==3.2
 statsmodels==0.11
