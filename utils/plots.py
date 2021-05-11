@@ -13,23 +13,30 @@ def bar_metrics(resultsDict):
     # MAE plot
     fig.add_subplot(2, 2, 1)
     df.loc["mae"].sort_values().plot(
-        kind="bar", colormap="Paired", color=[
-            color_dict.get(
-                x, "#333333") for x in df.loc["mae"].sort_values().index], )
+        kind="bar",
+        colormap="Paired",
+        color=[color_dict.get(x, "#333333") for x in df.loc["mae"].sort_values().index],
+    )
     plt.legend()
     plt.title("MAE Metric, lower is better")
     fig.add_subplot(2, 2, 2)
     df.loc["rmse"].sort_values().plot(
-        kind="bar", colormap="Paired", color=[
-            color_dict.get(
-                x, "#333333") for x in df.loc["rmse"].sort_values().index], )
+        kind="bar",
+        colormap="Paired",
+        color=[
+            color_dict.get(x, "#333333") for x in df.loc["rmse"].sort_values().index
+        ],
+    )
     plt.legend()
     plt.title("RMSE Metric, lower is better")
     fig.add_subplot(2, 2, 3)
     df.loc["mape"].sort_values().plot(
-        kind="bar", colormap="Paired", color=[
-            color_dict.get(
-                x, "#333333") for x in df.loc["mape"].sort_values().index], )
+        kind="bar",
+        colormap="Paired",
+        color=[
+            color_dict.get(x, "#333333") for x in df.loc["mape"].sort_values().index
+        ],
+    )
     plt.legend()
     plt.title("MAPE Metric, lower is better")
     fig.add_subplot(2, 2, 4)

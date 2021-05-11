@@ -5,7 +5,7 @@ If you want to run the notebooks on your computer make sure you install the requ
 
 Create the environment
 ```
-conda create --name {YOURENVNAME} python=3.6
+conda create --name {YOURENVNAME} python=3.7
 ```
 
 Activate the environment
@@ -30,4 +30,4 @@ conda install -c anaconda ipykernel
 python -m ipykernel install --user --name={KERNELNAME}
 ```
 
-The `{KERNELNAME}` should now appear on your jupyter kernel list! 
+The `{KERNELNAME}` should now appear on your jupyter kernel list!

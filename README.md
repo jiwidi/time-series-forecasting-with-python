@@ -63,216 +63,210 @@ We will devide our results wether the extra features columns such as temperature
 * Coefficient of determination (R2)
 
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>mae</th>
-      <th>rmse</th>
-      <th>mape</th>
-      <th>r2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>EnsembleXG+TF</th>
-      <td>27.960503</td>
-      <td>39.686824</td>
-      <td>0.438655</td>
-      <td>0.762551</td>
-    </tr>
-    <tr>
-      <th>EnsembleLIGHT+TF</th>
-      <td>27.909784</td>
-      <td>39.750590</td>
-      <td>0.435101</td>
-      <td>0.761787</td>
-    </tr>
-    <tr>
-      <th>EnsembleXG+LIGHT+TF</th>
-      <td>27.763722</td>
-      <td>39.346366</td>
-      <td>0.451024</td>
-      <td>0.766607</td>
-    </tr>
-    <tr>
-      <th>EnsembleXG+LIGHT</th>
-      <td>29.614893</td>
-      <td>41.660260</td>
-      <td>0.520180</td>
-      <td>0.738349</td>
-    </tr>
-    <tr>
-      <th>Randomforest tunned</th>
-      <td>40.740963</td>
-      <td>53.151506</td>
-      <td>0.903182</td>
-      <td>0.574099</td>
-    </tr>
-    <tr>
-      <th>SVM RBF GRID SEARCH</th>
-      <td>38.565602</td>
-      <td>50.340027</td>
-      <td>0.776779</td>
-      <td>0.617963</td>
-    </tr>
-    <tr>
-      <th>DeepAR</th>
-      <td>72.528734</td>
-      <td>105.391313</td>
-      <td>0.957377</td>
-      <td>-0.674509</td>
-    </tr>
-    <tr>
-      <th>Tensorflow simple LSTM</th>
-      <td>31.406890</td>
-      <td>44.007715</td>
-      <td>0.466331</td>
-      <td>0.708032</td>
-    </tr>
-    <tr>
-      <th>Prophet multivariate</th>
-      <td>38.346791</td>
-      <td>50.502186</td>
-      <td>0.744734</td>
-      <td>0.615498</td>
-    </tr>
-    <tr>
-      <th>Kneighbors</th>
-      <td>57.048847</td>
-      <td>80.387336</td>
-      <td>1.082936</td>
-      <td>0.025789</td>
-    </tr>
-    <tr>
-      <th>SVM RBF</th>
-      <td>40.808894</td>
-      <td>56.032800</td>
-      <td>0.794224</td>
-      <td>0.526672</td>
-    </tr>
-    <tr>
-      <th>Lightgbm</th>
-      <td>30.173660</td>
-      <td>42.745285</td>
-      <td>0.522338</td>
-      <td>0.724543</td>
-    </tr>
-    <tr>
-      <th>XGBoost</th>
-      <td>31.043099</td>
-      <td>43.195546</td>
-      <td>0.542145</td>
-      <td>0.718709</td>
-    </tr>
-    <tr>
-      <th>Randomforest</th>
-      <td>45.837942</td>
-      <td>59.448943</td>
-      <td>1.029276</td>
-      <td>0.467198</td>
-    </tr>
-    <tr>
-      <th>Lasso</th>
-      <td>39.236966</td>
-      <td>54.583998</td>
-      <td>0.709031</td>
-      <td>0.550832</td>
-    </tr>
-    <tr>
-      <th>BayesianRidge</th>
-      <td>39.243001</td>
-      <td>54.634477</td>
-      <td>0.707874</td>
-      <td>0.550001</td>
-    </tr>
-    <tr>
-      <th>Prophet univariate</th>
-      <td>61.533802</td>
-      <td>83.646732</td>
-      <td>1.268213</td>
-      <td>-0.054814</td>
-    </tr>
-    <tr>
-      <th>AutoSARIMAX (1, 0, 1),(0, 0, 0, 6)</th>
-      <td>51.291983</td>
-      <td>71.486838</td>
-      <td>0.912563</td>
-      <td>0.229575</td>
-    </tr>
-    <tr>
-      <th>SARIMAX</th>
-      <td>51.250482</td>
-      <td>71.328643</td>
-      <td>0.905278</td>
-      <td>0.232981</td>
-    </tr>
-    <tr>
-      <th>AutoARIMA (1, 0, 1)</th>
-      <td>47.096859</td>
-      <td>64.861693</td>
-      <td>1.005644</td>
-      <td>0.365759</td>
-    </tr>
-    <tr>
-      <th>ARIMA</th>
-      <td>48.249243</td>
-      <td>66.387526</td>
-      <td>1.061672</td>
-      <td>0.335567</td>
-    </tr>
-    <tr>
-      <th>ARMA</th>
-      <td>47.096859</td>
-      <td>64.861693</td>
-      <td>1.005644</td>
-      <td>0.365759</td>
-    </tr>
-    <tr>
-      <th>MA</th>
-      <td>49.043875</td>
-      <td>66.201671</td>
-      <td>1.052869</td>
-      <td>0.339282</td>
-    </tr>
-    <tr>
-      <th>AR</th>
-      <td>47.238049</td>
-      <td>65.321718</td>
-      <td>1.015593</td>
-      <td>0.356730</td>
-    </tr>
-    <tr>
-      <th>HWES</th>
-      <td>52.960293</td>
-      <td>74.671752</td>
-      <td>1.112627</td>
-      <td>0.159398</td>
-    </tr>
-    <tr>
-      <th>SES</th>
-      <td>52.960293</td>
-      <td>74.671752</td>
-      <td>1.112627</td>
-      <td>0.159398</td>
-    </tr>
-    <tr>
-      <th>Yesterdays value</th>
-      <td>52.674951</td>
-      <td>74.522764</td>
-      <td>1.044050</td>
-      <td>0.162749</td>
-    </tr>
-    <tr>
-      <th>Naive mean</th>
-      <td>59.320940</td>
-      <td>81.444360</td>
-      <td>1.321357</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Model</th>
+<th title="Field #2">mae</th>
+<th title="Field #3">rmse</th>
+<th title="Field #4">mape</th>
+<th title="Field #5">r2</th>
+</tr></thead>
+<tbody><tr>
+<td>EnsembleXG+TF</td>
+<td>27.636715371194235</td>
+<td>40.22713163966418</td>
+<td>0.417235373186213</td>
+<td>0.7560414156259503</td>
+</tr>
+<tr>
+<td>EnsembleLIGHT+TF</td>
+<td>27.343883702452075</td>
+<td>39.2701143554976</td>
+<td>0.4165273453614097</td>
+<td>0.7675110569347134</td>
+</tr>
+<tr>
+<td>EnsembleXG+LIGHT+TF</td>
+<td>27.634858862129317</td>
+<td>39.685112028877015</td>
+<td>0.4398299604512803</td>
+<td>0.7625713120947151</td>
+</tr>
+<tr>
+<td>EnsembleXG+LIGHT</td>
+<td>29.95312427473199</td>
+<td>42.70452481595056</td>
+<td>0.5232424810249069</td>
+<td>0.7250677041717724</td>
+</tr>
+<tr>
+<td>Randomforest tunned</td>
+<td>40.79113861034052</td>
+<td>53.19804047844643</td>
+<td>0.9032153211034835</td>
+<td>0.5733524634338175</td>
+</tr>
+<tr>
+<td>SVM RBF GRID SEARCH</td>
+<td>38.56562478061001</td>
+<td>50.34006040681473</td>
+<td>0.7767794489140278</td>
+<td>0.6179629913034281</td>
+</tr>
+<tr>
+<td>DeepAR</td>
+<td>71.37152301795753</td>
+<td>103.96899244382487</td>
+<td>0.9640163628258902</td>
+<td>-0.6296173573772541</td>
+</tr>
+<tr>
+<td>Tensorflow simple LSTM</td>
+<td>30.131065860622638</td>
+<td>43.075867339114566</td>
+<td>0.4159828417964767</td>
+<td>0.7202654993160147</td>
+</tr>
+<tr>
+<td>Prophet multivariate</td>
+<td>38.24990881198136</td>
+<td>50.445918809437885</td>
+<td>0.7416946500170641</td>
+<td>0.6163545566281877</td>
+</tr>
+<tr>
+<td>Kneighbors</td>
+<td>57.04884684382101</td>
+<td>80.38733591079851</td>
+<td>1.0829364988041466</td>
+<td>0.025788518944025896</td>
+</tr>
+<tr>
+<td>SVM RBF</td>
+<td>40.808894441967176</td>
+<td>56.03280030028863</td>
+<td>0.7942235072980369</td>
+<td>0.5266715316287722</td>
+</tr>
+<tr>
+<td>Lightgbm</td>
+<td>30.208044846890726</td>
+<td>42.75762737887313</td>
+<td>0.5228233367915872</td>
+<td>0.7243835290488294</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>32.132726550323085</td>
+<td>45.587756858787024</td>
+<td>0.5588847740800054</td>
+<td>0.6866898836748925</td>
+</tr>
+<tr>
+<td>Randomforest</td>
+<td>45.83794230098986</td>
+<td>59.448943203671895</td>
+<td>1.0292758595380396</td>
+<td>0.46719750636098334</td>
+</tr>
+<tr>
+<td>Lasso</td>
+<td>39.23696633914533</td>
+<td>54.583997908701555</td>
+<td>0.7090311778288818</td>
+<td>0.5508321591036289</td>
+</tr>
+<tr>
+<td>BayesianRidge</td>
+<td>39.24300096256203</td>
+<td>54.63447702907304</td>
+<td>0.7078739844522808</td>
+<td>0.5500009967624746</td>
+</tr>
+<tr>
+<td>Prophet univariate</td>
+<td>61.32766979896922</td>
+<td>83.63611560092615</td>
+<td>1.255915591523897</td>
+<td>-0.05454636657481493</td>
+</tr>
+<tr>
+<td>AutoSARIMAX (1, 0, 1),(0, 0, 0, 6)</td>
+<td>51.2919825059347</td>
+<td>71.48683847305887</td>
+<td>0.9125628930440329</td>
+<td>0.2295753804112044</td>
+</tr>
+<tr>
+<td>SARIMAX</td>
+<td>51.25048186072873</td>
+<td>71.32864345356596</td>
+<td>0.9052778110315475</td>
+<td>0.2329813915764456</td>
+</tr>
+<tr>
+<td>AutoARIMA (0, 0, 3)</td>
+<td>47.01056723044805</td>
+<td>64.7122976566249</td>
+<td>1.0022566314516306</td>
+<td>0.3686770004286427</td>
+</tr>
+<tr>
+<td>ARIMA</td>
+<td>48.24923372419579</td>
+<td>66.38753923351497</td>
+<td>1.0616715242063703</td>
+<td>0.3355671235683002</td>
+</tr>
+<tr>
+<td>ARMA</td>
+<td>47.09683864535579</td>
+<td>64.86169188736405</td>
+<td>1.0056439887364004</td>
+<td>0.3657587024902095</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>49.0438818653784</td>
+<td>66.20166785625156</td>
+<td>1.0528694833926353</td>
+<td>0.3392824644097636</td>
+</tr>
+<tr>
+<td>AR</td>
+<td>47.2380490738903</td>
+<td>65.3217182921559</td>
+<td>1.015593381744262</td>
+<td>0.3567301864236727</td>
+</tr>
+<tr>
+<td>HWES</td>
+<td>52.96026256576073</td>
+<td>74.67173007275758</td>
+<td>1.1126266238341962</td>
+<td>0.1593980396294502</td>
+</tr>
+<tr>
+<td>SES</td>
+<td>52.96026256576073</td>
+<td>74.67173007275758</td>
+<td>1.1126266238341962</td>
+<td>0.1593980396294502</td>
+</tr>
+<tr>
+<td>Yesterdays value</td>
+<td>52.67495069033531</td>
+<td>74.52276372084813</td>
+<td>1.044049705124814</td>
+<td>0.1627486115825163</td>
+</tr>
+<tr>
+<td>Naive mean</td>
+<td>59.32093968874532</td>
+<td>81.44435990224613</td>
+<td>1.3213573049116003</td>
+<td>0.0</td>
+</tr>
+</tbody></table>
 
  
 
