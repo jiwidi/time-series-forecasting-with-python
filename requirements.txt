@@ -1,5 +1,5 @@
 tqdm==4.59
-pydantic==1.4
+pydantic==1.6.2
 pystan==2.19.1.1
 requests==2.25
 xgboost==1.1
