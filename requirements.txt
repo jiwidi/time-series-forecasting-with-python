@@ -13,7 +13,7 @@ numpy
 scipy==1.4
 mxnet~=1.8
 gluonts==0.6
-tensorflow==2.7.2
+tensorflow==2.9.3
 scikit-learn==0.24
 matplotlib==3.4
 statsmodels==0.12.1
