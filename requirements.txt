@@ -1,7 +1,7 @@
 tqdm==4.59
 pydantic==1.6.2
 pystan==2.19.1.1
-requests==2.25
+requests==2.31.0
 xgboost==1.1
 fbprophet==0.7
 lightgbm==3.2
